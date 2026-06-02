@@ -7,12 +7,17 @@ The entire econometric pipeline is implemented from scratch in pure NumPy and Pa
 ## Repository Structure
 
 ```
-├── run_analysis.py    # Driver: runs the full pipeline, writes all figures and tables
-├── econ_lib.py        # Econometrics library (ARMA, GARCH, VAR, cointegration, MV optimisation)
-├── load_data.py       # Data loading and Fama-French factor proxy construction
-├── Data.csv           # Kenneth French 6-portfolio monthly returns (July 1926 to January 2026)
-├── figures/           # Output: all plots as PDF and PNG
-└── tables/            # Output: all numeric results as JSON and CSV
+├── code/
+│   ├── run_analysis.py    # Driver: runs the full pipeline, writes all figures and tables
+│   ├── econ_lib.py        # Econometrics library (ARMA, GARCH, VAR, cointegration, MV optimisation)
+│   ├── load_data.py       # Data loading and Fama-French factor proxy construction
+│   └── Data.csv           # Kenneth French 6-portfolio monthly returns (July 1926 to January 2026)
+├── figures/               # Output: all plots as PDF and PNG
+├── tables/                # Output: all numeric results as JSON and CSV
+├── report_source/
+│   ├── report.tex         # LaTeX source for the written report
+│   └── refs.bib           # Bibliography
+└── report.pdf             # Compiled report
 ```
 
 ## The Data
